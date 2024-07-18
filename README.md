@@ -99,9 +99,9 @@ Next, I assigned a rank to the total principal amount. The result was PARTITION 
 
 The 3rd and 4th CTEs were created to find the total population and total GDP in each region for the year 2017 to 2022. Subquery is used to ensure that I do not double count the population and GDP for each regions.
 
-![Total Population](images/4_total_population_CTE.png)
+![Total Population](images/4_population_CTE.png)
 
-![Total GDP](images/5_total_gdp_CTE.png)
+![Total GDP](images/5_gdp_CTE.png)
 
 The population and GDP data for different years are stored in separate columns (population_2017, population_2018 etc). I wanted to transform them into a single column so that I can present my results in a clear and concise way. CASE was used in the main query to convert these data from wide to long format, based on the year. 
 
